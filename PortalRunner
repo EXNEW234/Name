@@ -20,8 +20,7 @@ local UIGradient4 = Instance.new("UIGradient")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.Parent = game.CoreGui
 
 Back.Name = "Back"
 Back.Parent = ScreenGui
@@ -30,6 +29,8 @@ Back.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Back.BorderSizePixel = 0
 Back.Position = UDim2.new(0.104167633, 0, 0.181962028, 0)
 Back.Size = UDim2.new(0, 625, 0, 376)
+Back.Active = true
+Back.Draggable = true
 
 UICorner7.CornerRadius = UDim.new(0, 4)
 UICorner7.Name = "UICorner7"
