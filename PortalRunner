@@ -1,0 +1,143 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Back = Instance.new("Frame")
+local UICorner7 = Instance.new("UICorner")
+local UIGradient6 = Instance.new("UIGradient")
+local Name = Instance.new("Frame")
+local Magmastage = Instance.new("TextButton")
+local MagmaStage2 = Instance.new("TextLabel")
+local UICorner3 = Instance.new("UICorner")
+local SummerStage = Instance.new("TextButton")
+local SummerStage2 = Instance.new("TextLabel")
+local UICorner2 = Instance.new("UICorner")
+local DAQ = Instance.new("TextLabel")
+local UICorner5 = Instance.new("UICorner")
+local UIGradient4 = Instance.new("UIGradient")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Back.Name = "Back"
+Back.Parent = ScreenGui
+Back.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Back.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Back.BorderSizePixel = 0
+Back.Position = UDim2.new(0.104167633, 0, 0.181962028, 0)
+Back.Size = UDim2.new(0, 625, 0, 376)
+
+UICorner7.CornerRadius = UDim.new(0, 4)
+UICorner7.Name = "UICorner7"
+UICorner7.Parent = Back
+
+UIGradient6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+UIGradient6.Name = "UIGradient6"
+UIGradient6.Parent = Back
+
+Name.Name = "Name"
+Name.Parent = Back
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Name.BorderSizePixel = 0
+Name.Position = UDim2.new(-0.00143236667, 0, -0.00154860318, 0)
+Name.Size = UDim2.new(0, 625, 0, 40)
+
+Magmastage.Name = "Magma stage"
+Magmastage.Parent = Name
+Magmastage.BackgroundColor3 = Color3.fromRGB(128, 255, 164)
+Magmastage.BorderSizePixel = 0
+Magmastage.Position = UDim2.new(0.702399969, 0, 1.375, 0)
+Magmastage.Size = UDim2.new(0, 180, 0, 45)
+Magmastage.ZIndex = 2
+Magmastage.Font = Enum.Font.GothamSemibold
+Magmastage.Text = ""
+Magmastage.TextColor3 = Color3.fromRGB(255, 255, 255)
+Magmastage.TextScaled = true
+Magmastage.TextSize = 14.000
+Magmastage.TextWrapped = true
+Magmastage.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1827.89795, 413.67334, 2875.13696, 0.48474586, -2.19933529e-08, 0.874655068, -1.34921221e-08, 1, 3.26226939e-08, -0.874655068, -2.76146679e-08, 0.48474586)
+end)
+
+MagmaStage2.Name = "Magma Stage2"
+MagmaStage2.Parent = Magmastage
+MagmaStage2.AnchorPoint = Vector2.new(0.5, 0.5)
+MagmaStage2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MagmaStage2.BackgroundTransparency = 1.000
+MagmaStage2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MagmaStage2.BorderSizePixel = 0
+MagmaStage2.Position = UDim2.new(0.5, 0, 0.544444501, 0)
+MagmaStage2.Size = UDim2.new(1, -20, 1, -20)
+MagmaStage2.ZIndex = 2
+MagmaStage2.Font = Enum.Font.DenkOne
+MagmaStage2.Text = "Magma stage"
+MagmaStage2.TextColor3 = Color3.fromRGB(255, 255, 255)
+MagmaStage2.TextScaled = true
+MagmaStage2.TextSize = 14.000
+MagmaStage2.TextWrapped = true
+
+UICorner3.CornerRadius = UDim.new(0, 4)
+UICorner3.Name = "UICorner3"
+UICorner3.Parent = Magmastage
+
+SummerStage.Name = "Summer Stage"
+SummerStage.Parent = Name
+SummerStage.BackgroundColor3 = Color3.fromRGB(128, 255, 164)
+SummerStage.BorderSizePixel = 0
+SummerStage.Position = UDim2.new(0.0111999996, 0, 1.375, 0)
+SummerStage.Size = UDim2.new(0, 180, 0, 45)
+SummerStage.ZIndex = 2
+SummerStage.Font = Enum.Font.GothamSemibold
+SummerStage.Text = ""
+SummerStage.TextColor3 = Color3.fromRGB(255, 255, 255)
+SummerStage.TextScaled = true
+SummerStage.TextSize = 14.000
+SummerStage.TextWrapped = true
+SummerStage.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1823.3335, 413.865051, 2906.84204, -0.492324263, 5.87991948e-08, 0.870411873, -4.28994156e-08, 1, -9.18181584e-08, -0.870411873, -8.25444673e-08, -0.492324263)
+end)
+
+
+SummerStage2.Name = "Summer Stage2"
+SummerStage2.Parent = SummerStage
+SummerStage2.AnchorPoint = Vector2.new(0.5, 0.5)
+SummerStage2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SummerStage2.BackgroundTransparency = 1.000
+SummerStage2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+SummerStage2.BorderSizePixel = 0
+SummerStage2.Position = UDim2.new(0.5, 0, 0.544444501, 0)
+SummerStage2.Size = UDim2.new(1, -20, 1, -20)
+SummerStage2.ZIndex = 2
+SummerStage2.Font = Enum.Font.DenkOne
+SummerStage2.Text = "Summer Stage"
+SummerStage2.TextColor3 = Color3.fromRGB(255, 255, 255)
+SummerStage2.TextScaled = true
+SummerStage2.TextSize = 14.000
+SummerStage2.TextWrapped = true
+
+UICorner2.CornerRadius = UDim.new(0, 4)
+UICorner2.Name = "UICorner2"
+UICorner2.Parent = SummerStage
+
+DAQ.Name = "DAQ"
+DAQ.Parent = Name
+DAQ.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DAQ.BackgroundTransparency = 1.000
+DAQ.Size = UDim2.new(0, 625, 0, 40)
+DAQ.Font = Enum.Font.DenkOne
+DAQ.Text = "PorTal Runner ตึงๆ"
+DAQ.TextColor3 = Color3.fromRGB(0, 0, 0)
+DAQ.TextSize = 35.000
+
+UICorner5.CornerRadius = UDim.new(0, 4)
+UICorner5.Name = "UICorner5"
+UICorner5.Parent = Name
+
+UIGradient4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(88, 252, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(79, 145, 175))}
+UIGradient4.Name = "UIGradient4"
+UIGradient4.Parent = Name
